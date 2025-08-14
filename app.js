@@ -1,9 +1,9 @@
 alert('Seja bem vindo ao GAME MORTAL DO NUMERO SECRETO!');
-nomeUser = prompt('Antes de começarmos gostariamos de perguntar qual o seu nome')
-alert(`Saudações ${nomeUser}`)
-console.log('boas vindas dev ' + nomeUser)
+nomeUser = prompt('Antes de começarmos gostariamos de perguntar qual o seu nome');
+alert(`Saudações ${nomeUser}`);
+console.log('boas vindas dev ' + nomeUser);
 
-/// aleatoriza um numero entre 30 inteiro com parseint
+/// aleatoriza um numero inteiro digitado com parseint
 let numeroMaximo = 100;
 let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
 console.log('o numero aqui dev shhhhh ' + numeroSecreto);
@@ -13,7 +13,7 @@ let tentativas = 1;
 // enquanto != nao for igual
 while (chute != numeroSecreto) {
     chute = prompt(`qual o teu chute ${nomeUser} ? ta entre 1 e ${numeroMaximo}`);
-if (chute == numeroSecreto) 
+if (chute == numeroSecreto);
     {
      break; 
 } else {
@@ -26,6 +26,7 @@ if (chute == numeroSecreto)
     tentativas ++;
     }
 }
-let palavraTentativa = tentativas > 1? 'tentativas' : 'tentativa'
+let palavraTentativa = tentativas > 1? 'tentativas' : 'tentativa';
 alert(`Boa!! ${nomeUser}, o numero era ${numeroSecreto} mas tu usou ${tentativas} ${palavraTentativa
 }`);
+
